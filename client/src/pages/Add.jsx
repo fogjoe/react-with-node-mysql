@@ -25,21 +25,15 @@ export default function Add() {
   return (
     <div className="form">
       <h1>Add New Book</h1>
-      <div>
-        <label htmlFor="title">Title</label>
-        <input type="text" name="title" id="title" onChange={handleChange} />
+      <input type="text" placeholder="title" name="title" id="title" onChange={handleChange} />
 
-        <label htmlFor="desc">Description</label>
-        <input type="text" name="desc" id="desc" onChange={handleChange} />
+      <input type="text" placeholder="desc" name="desc" id="desc" onChange={handleChange} />
 
-        <label htmlFor="cover">Cover</label>
-        <input type="text" name="cover" id="cover" onChange={handleChange} />
+      <input type="text" placeholder="cover" name="cover" id="cover" onChange={handleChange} />
 
-        <label htmlFor="price">Price</label>
-        <input type="number" name="price" id="price" onChange={handleChange} />
+      <input type="number" placeholder="price" name="price" id="price" onChange={handleChange} />
 
-        <button onClick={handleClick}>Add</button>
-      </div>
+      <button className='formButton' onClick={handleClick}>Add</button>
     </div>
   )
 }

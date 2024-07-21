@@ -35,7 +35,9 @@ const Books = memo(function Books() {
             <button className="delete" onClick={() => handleDelete(book.id)}>
               delete
             </button>
-            <button className="update">update</button>
+            <button className="update">
+              <Link to={`/update/${book.id}`}>update</Link>
+            </button>
           </div>
         ))}
       </div>

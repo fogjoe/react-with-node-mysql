@@ -23,7 +23,7 @@ export const router = createBrowserRouter(
     <Route>
       <Route path="/" element={<Books />} />
       <Route path="/add" element={<Add />} />
-      <Route path="/update" element={<Update />} />
+      <Route path="/update/:bookId" element={<Update />} />
     </Route>
   )
 )

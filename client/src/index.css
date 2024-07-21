@@ -101,5 +101,26 @@ img {
   height: 300px;
   object-fit: cover;
   background-color: rgb(203, 238, 227);
-    border-radius: 8px;
+  border-radius: 8px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.form input {
+  width: 250px;
+  padding: 10px;
+  color: gray;
+}
+
+.formButton {
+  width: 270px;
+  background-color: rgb(229, 148, 35);
+  border: none;
+  border-radius: 0;
 }
